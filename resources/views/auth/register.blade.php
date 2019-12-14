@@ -11,7 +11,7 @@
            {!! Form::open(['route' => 'signup.post']) !!}
               <div class="form-group">
                   {!! Form::label('name','Name') !!}
-                  {!! FOrm::text('name',old('name'),['class' => 'form-control]) !!}
+                  {!! FOrm::text('name',old('name'),['class' => 'form-control']) !!}
               </div>
               
               <div class="form-group">
@@ -31,7 +31,6 @@
 
                 {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
-           
-       </div> 
+      </div> 
    </div>
 @endsection
