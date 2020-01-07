@@ -43,7 +43,7 @@ public function followings($id)
             'users'=> $followings,
             ];
             
-            $date +=$this->counts($user);
+            $data += $this->counts($user);
             
             return view('users.followings',$data);
     }
@@ -55,7 +55,7 @@ public function followers($id)
       
       $data = [
           'user' => $user,
-          'users'=>followers,
+          'users'=> $followers,
           ];
           
           $data +=$this->counts($user);
