@@ -38,14 +38,14 @@ public function followings($id)
         $user = User::find($id);
         $followings = $user->followings()->paginate(10);
         
-        $date = [
+        $data = [
             'user' => $user,
             'users'=> $followings,
             ];
             
             $date +=$this->counts($user);
             
-            return view('users.followings',$date);
+            return view('users.followings',$data);
     }
     
 public function followers($id)
